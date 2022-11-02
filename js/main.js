@@ -1,15 +1,15 @@
 // dichiarazione variabili-costanti
-const text3 = "Fizz"
-const text5 = "Buzz"
+const text3 = "Fizz";
+const text5 = "Buzz";
 const boxEl = document.querySelector(".box");
 
 
 // ciclo e condizioni sui 100 numeri
 for (let i = 1; i <= 100; i++) {
     let text = "";
-    let bkgColor = "";
+    let bkgColor = ""; // classi bkg definite in CSS
 
-
+    // output in base alla divisibilità 
     if (i % 3 === 0 && i % 5 === 0) {
 
         console.log(text3 + text5);
@@ -32,5 +32,5 @@ for (let i = 1; i <= 100; i++) {
         bkgColor = "bkg_number";
     }
 
-    boxEl.innerHTML += `<div class="square ${bkgColor}">${text}</div>` 
+    boxEl.innerHTML += `<div class="square ${bkgColor}">${text}</div>`; 
 }
